@@ -179,11 +179,11 @@
 
 2. Dans la page `/horloge`, quel code s'exécute sur le **serveur** et quel code s'exécute dans le **navigateur** ?
 
-   > _Ma réponse :_ 
+   > serveur = récupération de l'heure, de la date et affichage du message "bonjour depuis mon api", navigateur = remplissage du span#heure avec le contenu des données récupérées via l'api et la variable response, et activation seconde par seconde via setInterval() et mettreAJour() 
 
 3. Citez une application de votre téléphone qui, selon vous, utilise une API. Quelles données échange-t-elle ?
 
-   > _Ma réponse :_ 
+   > N'importe quelle application connectée à Internet permettant de consulter des données, donc je dirai mon application méteo. Elle récupère mon emplacement/les villes favorites, en récupère les données météorologiques et ensuite me les rend dans un affichage jolie 
 
 ---
 
@@ -191,4 +191,4 @@
 
 En quelques phrases, expliquez à un ami ce qui se passe entre le moment où il tape une adresse dans son navigateur et celui où la page s'affiche :
 
-> _Ma réponse :_ 
+> Alors quand tu tentes d'accéder à un site, dans le jargon on va dire que tu envoies une requête, ici pour récupérer la page https://monsite.com . A partir de là, le serveur chargé de gérer cet URL (on appelle ça comme ça aussi une adresse) va aller construire la page correspondant au chemin renseigné. Le chemin c'est ce qui suit un slash /, bon ici il n'y en a pas mais voilà. Après selon comment l'équipe de développement a géré le routage (la façon dont les pages sont joignables comme des routes), tu vas être amenée à une page spécifique qui contient du HTML donc un langage qui balise les éléments sur la page (genre ici il y a un bouton, là un paragaphe, ici une barre de navigation...), du CSS qui permet d'ajouter de la personnalisation et du style à la page (ce titre va être de telle couleur, avec telle police, cet élément va afficher à la verticale tous les éléments avec tel espace vide autour, le tout de façon centrée par rapport à l'élément dans lequel il est, ajouter un style différent selon l'action que tu fais avec ta souris comme un survol ou un clic, adapter la taille d'un élément à la taille de l'écran, etc il y a une flopée de règles possibles). Enfin on peut aussi rajouter du javascript qui permet de rajouter un peu d'intéractivité (par exemple un élément qui s'actualise en temps réel comme une horloge, le fait d'envoyer un formulaire et de déclencher une autre action par la suite, ajouter des éléments à un panier, trier les éléments d'une liste...).
