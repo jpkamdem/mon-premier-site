@@ -139,15 +139,15 @@
 
 1. Quelle est la différence entre une erreur `4xx` et une erreur `5xx` ? Qui est « fautif » dans chaque cas ?
 
-   > _Ma réponse :_ 
+   > 4xx = erreur client donc la requête est en cause (pas forcément l'utilisateur, p-e une erreur de prog dans la création de la requête par les devs), 5xx = erreur serveur (pb côté serveur, bug à corriger par les devs ou même interne à certains outils) 
 
 2. Comment fonctionne une redirection ? Qui fait la deuxième requête : le serveur ou le navigateur ?
 
-   > _Ma réponse :_ 
+   > Le navigateur 
 
 3. Donnez un exemple de situation où un vrai site utilise une redirection.
 
-   > _Ma réponse :_ 
+   > Lorsque la page `/home` est une page de connexion mais que la session de l'utilisateur est encore active, récupérée dans le local/sessionstorage / cookies le session/token_id afin de récupérer l'user, l'identifier, et rediriger le client vers la page `/profil` par exemple
 
 ---
 
