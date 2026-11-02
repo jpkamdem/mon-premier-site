@@ -8,7 +8,7 @@
 #  Les consignes sont dans le dossier "exercices/".
 # ---------------------------------------------------------------
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -35,6 +35,11 @@ def bonjour(prenom):
 def loisirs():
     return "J'aime bien les jeux vidéos du style FGC, Metroidvania et RPG, un peu les séries & films, beaucoup les films d'animations et les mangas de tout genre/catégorie."
 
+@app.get("/calcul")
+def calcul():
+    a = int(request.args.get("a", 0))
+    b = int(request.args.get("b", 0))
+    return f"{a} + {b} = {a + b}"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
