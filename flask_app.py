@@ -64,7 +64,7 @@ def salut():
         prenom = request.args.get("prenom", "inconnu")
         ville = request.args.get("ville", "nulle part")
         couleur = request.args.get("couleur", "aucune")
-    return f"Bonjour {prenom}, qui vient de {ville} ! (reçu en {request.method})"
+    return f"Bonjour {prenom}, qui vient de {ville} et qui aime la couleur {couleur} ! (reçu en {request.method})"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
