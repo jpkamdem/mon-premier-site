@@ -8,7 +8,7 @@
 #  Les consignes sont dans le dossier "exercices/".
 # ---------------------------------------------------------------
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, abort
 
 app = Flask(__name__)
 
@@ -19,6 +19,21 @@ app = Flask(__name__)
 @app.get("/")
 def accueil():
     return render_template("accueil.html")
+
+# 3xx : une redirection
+@app.get("/home")
+def home():
+    return redirect("/")
+
+# 4xx : un accès interdit
+@app.get("/secret")
+def secret():
+    abort(403)
+
+# Une page d'erreur 404 personnalisée
+@app.errorhandler(404)
+def page_introuvable(erreur)
+    return render_template("404.html"), 404
 
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
