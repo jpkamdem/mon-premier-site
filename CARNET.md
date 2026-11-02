@@ -63,7 +63,7 @@
 
 2. Les `{{ prenom }}` sont-ils remplacés par le serveur ou par le navigateur ? Comment l'avez-vous vérifié ?
 
-   > _Ma réponse :_ 
+   > C'est le serveur, le code source ne montre jamais `{{ prenom }}` et `{{ nom }}` donc je suppose que ça s'opère en amont 
 
 ---
 
