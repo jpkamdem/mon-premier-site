@@ -29,6 +29,7 @@ def presentation():
     return "Je m'appelle Jean-Philippe et je suis étudiant en informatique."
 
 @app.get("/loisirs")
+def loisirs():
     return "J'aime bien les jeux vidéos du style FGC, Metroidvania et RPG, un peu les séries & films, beaucoup les films d'animations et les mangas de tout genre/catégorie."
 
 
