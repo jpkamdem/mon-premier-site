@@ -155,19 +155,19 @@
 
 1. Citez trois informations que le serveur connaît sur vous, sans que vous ayez rien rempli.
 
-   > _Ma réponse :_ 
+   > Mon OS, mon hôte (pythonanywhere) et les systèmes de compressions supportés 
 
 2. À quoi peut servir l'en-tête `Accept-Language` pour un site comme Wikipédia ?
 
-   > _Ma réponse :_ 
+   > wikipedia peut inspecter ces données et directement m'afficher le site dans une de mes langues supportées 
 
 3. Dans l'Access log, retrouvez une requête qui a reçu un code `404`. Quelle page était demandée ?
 
-   > _Ma réponse :_ 
+   > Pas une page mais le `favicon.ico`
 
 4. Après cet exercice, que pensez-vous de la notion de « navigation anonyme » ?
 
-   > _Ma réponse :_ 
+   > Un non-sens 
 
 ---
 
@@ -175,7 +175,7 @@
 
 1. Quelle est la différence entre une page HTML et une réponse JSON ? À qui chacune est-elle destinée ?
 
-   > _Ma réponse :_ 
+   > Une page HTML est rendue à un utilisateur final pour être facilement lisible (et aidée par du css). Json est un format de fichier simple à lire par les humains et les machines, et est utilisé pour transmettre des données entre serveurs 
 
 2. Dans la page `/horloge`, quel code s'exécute sur le **serveur** et quel code s'exécute dans le **navigateur** ?
 
