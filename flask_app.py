@@ -27,6 +27,10 @@ def accueil():
 def presentation():
     return render_template("presentation.html", prenom="Jean-Philippe", nom="Kamdem")
 
+@app.get("/bonjour/<prenom>")
+def bonjour(prenom):
+    return f"<h1>Bonjour {prenom} !</h1>"
+
 @app.get("/loisirs")
 def loisirs():
     return "J'aime bien les jeux vidéos du style FGC, Metroidvania et RPG, un peu les séries & films, beaucoup les films d'animations et les mangas de tout genre/catégorie."
