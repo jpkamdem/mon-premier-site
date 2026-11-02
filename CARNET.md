@@ -31,11 +31,11 @@
 
 2. Que veut dire le message *Not Found* ? Qui l'a envoyé : votre navigateur ou le serveur ?
 
-   > _Ma réponse :_ 
+   > La page n'existe pas, le serveur n'a pas prévu de réponse pour le chemin que le client a tenté d'accéder. C'est envoyé par le serveur 
 
 3. Que se passe-t-il si deux fonctions portent le même nom dans `flask_app.py` ? (Indice : essayez, puis lisez l'Error log.)
 
-   > _Ma réponse :_ 
+   > Error code: 502-backend, donc ça vient du serveur  
 
 ---
 
@@ -43,15 +43,15 @@
 
 1. Quelle est la différence entre ce que le serveur **envoie** et ce que le navigateur **affiche** ?
 
-   > _Ma réponse :_ 
+   > Le serveur envoie le code source, tandis que le navigateur affiche sa version propre je dirai 
 
 2. À quoi servent les balises `<h1>`, `<p>`, `<ul>` et `<li>` ?
 
-   > _Ma réponse :_ 
+   > h1 pour un titre très important (jusqu'à h6), p pour paragraphe, ul pour une liste non ordonnée (contre ol pour ordonnée) et li un item d'une liste (ul comme ol). Techniquement on peut faire un site qu'avec des `<div>` et des `<p>` mais c'est pas bien pour plusieurs raisons. Déjà au niveau sémantique, certaines balises indiquent la nature de ce qu'elles contiennent (`<form>`, `<header>`, `<aside>`, `<nav>`, etc.), tandis que certains n'indiquent rien du tout (`<div>`, `<span>`, etc.). Niveau référencement c'est nul de ne pas les utiliser, donc vaut mieux le faire. Aussi c'est pratique pour les humains niveau lisibilité. Compliqué de se retrouver dans un océan de `<div>` imbriquées, alors qu'un `<main>` contenant une `<div>` dans laquelle se trouve 2 `<section>` qui contiennent chacune 3 `<article>` composées elles-même de `<div>` et `<span>`, c'est plus propre. Ca fatigue moins l'esprit et profite à tous donc faut faire attention 
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
-   > _Ma réponse :_ 
+   > la balise `<img>` interprête le lien passé à l'attribut `src` et rend donc l'image. C'est comme si le site téléchargeait l'image. Pratique pour ne pas remplir le dépôt d'images, mais problématique si le service fournissant le lien vers l'image tombe 
 
 ---
 
@@ -59,7 +59,7 @@
 
 1. Pourquoi est-ce une bonne idée de séparer le code Python et le HTML ? (Pensez à une équipe avec un développeur et un graphiste.)
 
-   > _Ma réponse :_ 
+   > Question de propreté, c'est pas pratique d'avoir tout le code au même endroit, c'est toujours mieux d'avoir des fichiers plus petits qui s'occupent d'une seule tâche qu'un super fichier de 400 lignes. De plus, dans un contexte d'équipes aux compétences complémentaires, le développeur front Typescript utilisant React et intervenant sur le front n'a pas à intéragir avec le code du serveur, de même que le développeur back python n'a pas à intéragir avec le code d'interface, pour que chacun des 2 puissent travailler sans se gêner
 
 2. Les `{{ prenom }}` sont-ils remplacés par le serveur ou par le navigateur ? Comment l'avez-vous vérifié ?
 
