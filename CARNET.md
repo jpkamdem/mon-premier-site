@@ -71,15 +71,15 @@
 
 1. Quelle est la différence de rôle entre le HTML et le CSS ?
 
-   > _Ma réponse :_ 
+   > `html` est un langage de balisage, il indique la présence d'éléments sur la page : paragraphe, formulaire, navigation, header/footer... `css` permet de personnaliser l'affichage de la page : changer la taille des éléments (bloc, police), changer l'emplacement des éléments à l'intérieur d'un élément parent, modifier l'affichage selon la taille de l'écran du client, changer les couleurs...
 
 2. Pour afficher votre page `/presentation`, combien de fichiers le navigateur doit-il télécharger ? (Vous pourrez le vérifier à l'exercice suivant !)
 
-   > _Ma réponse :_ 
+   > 3 : `favicon`, `presentation.html` et `style.css`
 
 3. Pourquoi faut-il parfois faire **Ctrl + F5** pour voir les changements de CSS ?
 
-   > _Ma réponse :_ 
+   > Pour télécharger la nouvelle version à jour du fichier `style.css` 
 
 ---
 
