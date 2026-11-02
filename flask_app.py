@@ -59,9 +59,11 @@ def salut():
     if request.method == "POST":
         prenom = request.form.get("prenom", "inconnu")
         ville = request.form.get("ville", "nulle part")
+        couleur = request.form.get("couleur", "aucune")
     else:
         prenom = request.args.get("prenom", "inconnu")
         ville = request.args.get("ville", "nulle part")
+        couleur = request.args.get("couleur", "aucune")
     return f"Bonjour {prenom}, qui vient de {ville} ! (reçu en {request.method})"
 
 # ---------------------------------------------------------------

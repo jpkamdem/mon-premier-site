@@ -127,11 +127,11 @@
 
 2. Pour un formulaire de **recherche**, quelle méthode choisiriez-vous ? Et pour un formulaire de **connexion avec mot de passe** ? Pourquoi ?
 
-   > Recherche = GET car on ne crée pas de ressource mais on cherche à accéder à une donnée de façon pécise, connexion = POST car on va créer une nouvelle ressource, ici une connexion se matérialisant sous une session/token_id je suppose 
+   > Recherche = GET car on ne crée pas de ressource mais on cherche à accéder à une donnée de façon pécise, connexion = POST car on va créer une nouvelle ressource, ici une connexion via une requête dans laquelle on stocke les données à envoyer 
 
 3. Les données envoyées en POST sont-elles vraiment « secrètes » ? (Pensez à ce que vous avez vu dans l'onglet Réseau.)
 
-   > Non 
+   > Non, visibles directement dans l'onglet réseau, requête 
 
 ---
 
