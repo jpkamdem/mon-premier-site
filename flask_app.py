@@ -25,6 +25,9 @@ def accueil():
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
 @app.get("/presentation")
+@app.get("/presentation")
+def presentation():
+    return "test."
 def presentation():
     return """
     <h1>Jean-Philippe Kamdem</h1>
