@@ -29,7 +29,7 @@ def presentation():
 
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
-    return f"<h1>Bonjour {prenom} !</h1>"
+    return render_template("bonjour.html")
 
 @app.get("/loisirs")
 def loisirs():
@@ -39,7 +39,16 @@ def loisirs():
 def calcul():
     a = int(request.args.get("a", 0))
     b = int(request.args.get("b", 0))
-    return f"{a} + {b} = {a + b}"
+    op = str(request.args.get("op", "plus"))
+    match op:
+        case "moins":
+            return f"{a} - {b} = {a - b}"
+        case "fois":
+            return f"{a} x {b} = {a * b}"
+        case "div":
+            return f"{a} / {b} = {a / b}"
+        case "plus":
+            return f"{a} + {b} = {a + b}"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
